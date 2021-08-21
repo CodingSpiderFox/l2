@@ -1,0 +1,43 @@
+{
+    "editor.formatOnSave": true,
+    "editor.formatOnType": true,
+    "editor.formatOnPaste": true,
+    "editor.suggestSelection": "first",
+    "vsintellicode.modify.editor.suggestSelection": "automaticallyOverrodeDefaultValue",
+    "java.configuration.checkProjectSettingsExclusions": false,
+    "workbench.startupEditor": "newUntitledFile",
+    "tabnine.experimentalAutoImports": true,
+    "[json]": {
+        "editor.defaultFormatter": "esbenp.prettier-vscode"
+    },
+    "[typescript]": {
+        "editor.formatOnSave": true
+        },
+    "[typescriptreact]": {
+        "editor.formatOnSave": true
+        },
+    "[javascript]": {
+        "editor.formatOnSave": true
+        },
+    "[html]": {
+        "editor.formatOnSave": true
+        },
+    "[java]": {
+        "editor.formatOnSave": true
+        },
+    "eslint.wokingDirectories": [
+        {
+            "mode": "auto"
+        }
+    ],
+    "editor.codeActionsOnSave": {
+        "source.fixAll": true,
+        "source.organizeImports": true
+    },
+    "editor.codeActionOnSaveTimeout": 4000,
+    "python.languageServer": "Microsoft",
+    "explorer.confirmDelete": false,
+    "tailwindCSS.includeLanguages": { "plaintext": "typescript" },
+    "editor.renderControlCharacters": true,
+    "editor.renderWhitespace": "all"
+}

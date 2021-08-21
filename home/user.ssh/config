@@ -1,0 +1,12 @@
+# Default github account: CodingSpiderFox
+Host github.com
+   HostName github.com
+   IdentityFile ~/.ssh/id_rsa
+   IdentitiesOnly yes
+   
+# Other github account: awesomemusician
+Host github-awsm
+   HostName github.com
+   IdentityFile ~/.ssh/id_rsa_awsm
+   IdentitiesOnly yes
+
