@@ -55,7 +55,7 @@ ZSH_THEME="powerlevel10k/powerlevel10k"
 
 source $ZSH/oh-my-zsh.sh
 source <(kubectl completion zsh)
-alias rkc="kubectl --namespace rook-ceph exec -it $(kubectl --namespace rook-ceph get pod -l 'app=rook-ceph-tools' -o jsonpath='{.items[0].metadata.name}') bash"
+alias rkc="kubectl --namespace rook-ceph exec -it \$(kubectl --namespace rook-ceph get pod -l 'app=rook-ceph-tools' -o jsonpath='{.items[0].metadata.name}') bash"
 source "$HOME/.cargo/env"
 
 export NVM_DIR="$HOME/.nvm"
@@ -69,8 +69,8 @@ alias ideau="if [ ! -f '/snap/bin/intellij-idea-ultimate' ]; then echo echo 'Ins
 alias backuphome="zip -r backup.zip \.* -x \*.wine\*"
 alias gapac="git add -p && git commit"
 alias gapaca="git add -p && git commit --amend"
-alias gapacpush="git add -p && git commit && git push --set-upstream origin $(branchname)"
-alias gapacapush="git add -p && git commit --amend && git push --set-upstream origin $(branchname)"
+alias gapacpush="git add -p && git commit && git push --set-upstream origin \$(branchname)"
+alias gapacapush="git add -p && git commit --amend && git push --set-upstream origin \$(branchname)"
 alias gdh="git diff HEAD~1 HEAD"
 alias gdh2="git diff HEAD~2 HEAD"
 alias gdh3="git diff HEAD~3 HEAD"
@@ -135,8 +135,8 @@ alias c.='code.'
 alias zhist="nano ~/.zsh_history"
 alias mvndc="mvn org.owasp:dependency-check-maven:check && mvn dependency:tree | tee d"
 alias dkrmf="docker rm --force"
-alias dkrmfa="docker rm --force $(docker ps -aq)"
-alias dkrmaf="docker rm --force $(docker ps -aq)"
+alias dkrmfa="docker rm --force \$(docker ps -aq)"
+alias dkrmaf="docker rm --force \$(docker ps -aq)"
 alias dkpaq="docker ps -aq"
 alias tma="tmux attach"
 alias mcc="mvn clean compile"
